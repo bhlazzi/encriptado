@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Encriptador</h1>
+        </div>
+        <div class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jose-calderon-b62635246/" target="_blank">Conoceme</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>  
+    <main class="container">
+
+        <div class="container_ingreso">
+            <div class="container_texto">
+                <textarea name="texto1" id="texto1" placeholder="Ingresa tu texto"></textarea>
+                <p ">Solo minisculas y sin simbolos!</p>
+            </div>
+            <div class="caja_btn">
+                <button class="btn1" onclick="encriptar()">Encriptar</button>
+                <button class="btn2" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor_img">
+            <img src="/img/banner_img.gif" alt="imagen robot">
+            <p>Tu mensaje se mostrara aqui!</p>
+        </div>
+        <div class="container_texto2">
+            <div class="container_respuesta">
+                <textarea name="texto2" id="texto2"></textarea>
+            </div>
+            <div class="caja_btn1">
+                <button class="btn3" onclick="copiarMsj()" >Copiar</button>
+            </div>
+        </div>
+        
+    </main> 
+    <footer class="footer">
+         <p>&COPY;Todos los derechos reservados, diseño Jose Calderon</p>
+    </footer> 
+    
+    <script src="/Css/encriptador.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
