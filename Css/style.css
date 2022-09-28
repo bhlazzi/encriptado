@@ -14,12 +14,16 @@ html {
 }
 /*Globales*/
 body{
-   margin: 0 auto;
-   width: 100%;
-   font-family: var(--principal);
+    margin: 0;
+    width: 100%;
+    font-family: var(--principal);
 }
 .span{
     color: red;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 1.5rem;
 }
 /*encabezado*/
 .header{
@@ -32,8 +36,8 @@ body{
     padding: 0 4rem;
 }
 .logo h1{
-   font-size: 5rem;
-   color: var(--cuarto);
+    font-size: 5rem;
+    color: var(--cuarto);
 }
 
 /*navegacion*/
@@ -73,15 +77,16 @@ body{
     margin: 0 auto;
 }
 .contenedor_img img{
-    margin-top: 5rem;
-    width: 500px;
+    margin-top:5rem;
+    width: 100%;
     height: 400px;
 }
 .contenedor_img p{
     text-align: center;
     font-size: 1.5rem;
     color:var(--cuarto);
-    margin:3rem;
+    padding:2rem;
+    margin:0;
 }
 
 /*contenido texto*/
@@ -94,26 +99,26 @@ body{
     display: none;
 }
 .container_texto{
-   grid-column: 1/2;
-   text-align: center;
-   padding-top: 4rem; 
+    grid-column: 1/2;
+    text-align: center;
+    padding-top: 4rem; 
 }
 .container_texto p{
     color: var(--cuarto);
     font-size: 1.5rem;
 }
 .container_texto textarea, .container_respuesta textarea{
-   width: 500px;
-   height: 400px;
-   font-size: 1.5rem;
-   resize: none;
-   border: solid 3px var(--primero);
+    width: 500px;
+    height: 400px;
+    font-size: 1.5rem;
+    resize: none;
+    border: solid 3px var(--primero);
 }
 .container_respuesta{
     text-align: center;
     padding-top: 4rem;
- }
- /*botones*/
+    }
+/*botones*/
 .caja_btn{
     grid-row: 2/3;
     text-align: center; 
@@ -153,7 +158,58 @@ body{
     color: var(--cuarto);
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 2rem;
+}
+/*pag contacto formulario*/
+.container_form{
+    
+    border: #18121E solid 2px;
+    width: min( 60rem, 100%);
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+.formulario{
+    
+    background-color: var(--segundo);
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cuarto);
+    padding: 2rem;
+}
+.campo{
+    margin-bottom:2rem;
+}
+.campo label{
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--cuarto);
+    display: block;
+}
+.campo input{
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.campo textarea{
+    resize: none;
+    height: 20rem;
+    width: 100% ;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.btn_enviar input{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--cuarto);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 1.3rem;
 }
 /*mobile*/
 @media screen and (max-width: 768px){
@@ -171,7 +227,7 @@ body{
         gap: 2rem;
     }
     .navegacion a{
-       text-align: center;
+        text-align: center;
     }
     .container{
         display: block;
@@ -180,7 +236,10 @@ body{
         padding: 1rem;
     }
     .container_texto textarea, .container_respuesta textarea{
-        width: 400px;
+        width: 100%;
         height: 300px;
+    }
+    .campo input, .campo textarea{
+        width: 100%;
     }
 }

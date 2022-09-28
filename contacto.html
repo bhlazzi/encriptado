@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/Normalize.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Contacto</h1>
+        </div>
+        <div class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jose-calderon-b62635246/" target="_blank">Conoceme</a>
+                </li>
+                <li>
+                    <a href="contacto.html" target="_blank">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header> 
+
+    <div class="container_form">
+        <form class="formulario">
+            <fieldset>
+                <legend>Llena todos los campos para contactarme</legend>
+                
+                <div class="contenedor_campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" placeholder="Escribe tu numbre">
+                    </div>
+                    <div class="campo" >
+                        <label for="Telefono">Telefono: </label>
+                        <input type="tel" placeholder="Escribe tu numero">
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Correo: </label>
+                        <input type="email" placeholder="Ingresa tu correo">
+                    </div>
+                    <div class="campo">
+                        <label for="Mensaje">Mensaje: </label>
+                        <textarea name="text" id="text" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <div class="btn_enviar">
+                        <input type="button" value="enviar">
+                    </div>
+            
+            </div>
+            </fieldset>
+            
+        </form>
+    </div> 
+    <footer class="footer">
+        <p>&COPY;Todos los derechos reservados, diseño Jose Calderon</p>
+    </footer> 
+
+    
+    <script src="./Css/encriptador.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

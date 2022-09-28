@@ -42,7 +42,7 @@ function errorTexto(){
         footer:'<span class="span"> Recuerda solo minusculas y sin simbolos!</span>',
         width:'40%',
         padding:'3rem',
-      })
+    })
 }
 //funcion para mostrar resultados de encriptacion en botones
 function encriptar(){
